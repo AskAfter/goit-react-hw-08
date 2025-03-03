@@ -1,4 +1,4 @@
-const register = () => {
-  return <div>register</div>;
+const Register = () => {
+  return <div>Register</div>;
 };
-export default register;
+export default Register;
