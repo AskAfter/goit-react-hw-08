@@ -6,12 +6,12 @@ import SearchBox from '../SearchBox/SearchBox';
 import s from './App.module.css';
 import { ImShocked } from 'react-icons/im';
 import { useEffect } from 'react';
-import { fetchContacts } from '../../redux/contactsOps';
+import { fetchContacts } from '../../redux/contacts/operations.js';
 import {
   selectContacts,
   selectError,
   selectLoading,
-} from '../../redux/contactsSlice';
+} from '../../redux/contacts/selectors.js';
 
 function App() {
   const contacts = useSelector(selectContacts || []);
