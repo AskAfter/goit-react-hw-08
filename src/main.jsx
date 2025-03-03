@@ -6,6 +6,7 @@ import App from './components/App/App.jsx';
 import { Provider } from 'react-redux';
 import { store } from './redux/store.js';
 import { BrowserRouter } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
         <App />
       </Provider>
     </BrowserRouter>
+    <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
   </StrictMode>
 );

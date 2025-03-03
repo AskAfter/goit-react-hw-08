@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
-import Register from '../../pages/Register/Register';
+import Registration from '../../pages/Registration/Registration';
 import Login from '../../pages/Login/Login';
 import NotFound from '../../pages/NotFound/NotFound';
 import Layout from '../Layout';
@@ -14,7 +14,7 @@ const App = () => {
         <Route path="contacts" element={<Contacts />} />
       </Route>
       <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+      <Route path="/registration" element={<Registration />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

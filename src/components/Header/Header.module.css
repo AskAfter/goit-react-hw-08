@@ -1,11 +1,22 @@
 .header {
   background-color: var(--backGroundColor);
   width: 100vw;
-
-  /* position: fixed; */
-  left: 0;
-  top: 0;
   margin-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  /* display: flex; */
+}
+
+.nav {
+  padding-right: 10px;
+  display: flex;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  gap: 10px;
+  align-items: center;
+  .button {
+    height: 50%;
+  }
 }
 
 .list {
@@ -15,7 +26,8 @@
   align-items: center;
   list-style: none;
   height: 60px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: auto;
   gap: 5px;
   padding-right: 10px;
   .navLink {
@@ -27,4 +39,13 @@
 
 .active {
   text-decoration: underline;
+}
+
+.userName {
+  font-size: 30px;
+  color: black;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%; */
 }
