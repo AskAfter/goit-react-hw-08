@@ -1,0 +1,30 @@
+.header {
+  background-color: var(--backGroundColor);
+  width: 100vw;
+
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  max-width: var(--max-width);
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  margin: 0 auto;
+  gap: 5px;
+  padding-right: 10px;
+  .navLink {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}

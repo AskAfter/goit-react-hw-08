@@ -28,7 +28,7 @@ function PhoneBook() {
 
   return (
     <div className={s.container}>
-      <h1 className={s.header}>PhoneBook</h1>
+      <h1 className={s.header}>Contacts</h1>
       <ContactForm />
       <SearchBox />
       {contacts.length > 0 && <ContactList />}
