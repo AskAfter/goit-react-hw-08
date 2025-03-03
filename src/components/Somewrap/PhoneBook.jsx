@@ -13,7 +13,7 @@ import {
   selectLoading,
 } from '../../redux/contacts/selectors.js';
 
-function App() {
+function PhoneBook() {
   const contacts = useSelector(selectContacts || []);
   const isLoading = useSelector(selectLoading);
   const isError = useSelector(selectError);
@@ -44,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default PhoneBook;
