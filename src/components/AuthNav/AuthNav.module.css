@@ -1,0 +1,42 @@
+.nav {
+  padding-right: 10px;
+  display: flex;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  gap: 10px;
+  align-items: center;
+  .button {
+    height: 50%;
+  }
+}
+
+.list {
+  display: flex;
+  max-width: var(--max-width);
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  /* margin: 0 auto; */
+  margin-left: auto;
+  gap: 5px;
+  padding-right: 10px;
+  .navLink {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.userName {
+  font-size: 30px;
+  color: black;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%; */
+}
