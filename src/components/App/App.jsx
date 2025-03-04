@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { refreshUser } from '../../redux/auth/operations';
 import { selectIsRefreshing } from '../../redux/auth/selectors';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
-import PublicRoute from '../PublicRoute/PublicRoute';
+import RestrictedRoute from '../RestrictedRoute/RestrictedRoute';
 import HomePage from '../../pages/HomePage/HomePage';
 import ContactsPage from '../../pages/ContactsPage/ContactsPage';
 import LoginPage from '../../pages/LoginPage/LoginPage';
@@ -33,17 +33,17 @@ const App = () => {
         <Route
           path="/login"
           element={
-            <PublicRoute>
+            <RestrictedRoute>
               <LoginPage />
-            </PublicRoute>
+            </RestrictedRoute>
           }
         />
         <Route
           path="/registration"
           element={
-            <PublicRoute>
+            <RestrictedRoute>
               <RegistrationPage />
-            </PublicRoute>
+            </RestrictedRoute>
           }
         />
       </Route>
