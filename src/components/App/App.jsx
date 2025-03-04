@@ -1,16 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from '../../pages/Home/Home';
-import Registration from '../../pages/Registration/Registration';
-import Login from '../../pages/Login/Login';
 import NotFound from '../../pages/NotFound/NotFound';
 import Layout from '../Layout';
-import Contacts from '../../pages/Contacts/Contacts';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { refreshUser } from '../../redux/auth/operations';
 import { selectIsRefreshing } from '../../redux/auth/selectors';
 import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import PublicRoute from '../PublicRoute/PublicRoute';
+import HomePage from '../../pages/HomePage/HomePage';
+import ContactsPage from '../../pages/ContactsPage/ContactsPage';
+import LoginPage from '../../pages/LoginPage/LoginPage';
+import RegistrationPage from '../../pages/RegistrationPage/RegistrationPage';
 
 const App = () => {
   const isRefreshing = useSelector(selectIsRefreshing);
@@ -21,12 +21,12 @@ const App = () => {
   return isRefreshing ? null : (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
         <Route
           path="contacts"
           element={
             <PrivateRoute>
-              <Contacts />
+              <ContactsPage />
             </PrivateRoute>
           }
         />
@@ -34,7 +34,7 @@ const App = () => {
           path="/login"
           element={
             <PublicRoute>
-              <Login />
+              <LoginPage />
             </PublicRoute>
           }
         />
@@ -42,7 +42,7 @@ const App = () => {
           path="/registration"
           element={
             <PublicRoute>
-              <Registration />
+              <RegistrationPage />
             </PublicRoute>
           }
         />

@@ -1,11 +1,11 @@
-import s from './Registration.module.css';
+import s from './RegistrationPage.module.css';
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
 
-const Registration = () => {
+const RegistrationPage = () => {
   return (
     <div className={s.wrapper}>
       <RegistrationForm />
     </div>
   );
 };
-export default Registration;
+export default RegistrationPage;
