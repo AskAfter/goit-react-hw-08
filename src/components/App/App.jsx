@@ -4,7 +4,7 @@ import Registration from '../../pages/Registration/Registration';
 import Login from '../../pages/Login/Login';
 import NotFound from '../../pages/NotFound/NotFound';
 import Layout from '../Layout';
-import Contacts from '../../pages/Contacts/Contacts';
+import Contacts from '../../pages/temp/temp';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { refreshUser } from '../../redux/auth/operations';

@@ -1,4 +1,4 @@
-import PhoneBook from '../../components/temp/temp';
+import PhoneBook from '../../components/PhoneBook/PhoneBook';
 
 const Contacts = () => {
   return (
