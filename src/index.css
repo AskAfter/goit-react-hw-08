@@ -20,7 +20,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: white;
+  background-color: var(--backGroundColor);
 }
 
 h1,

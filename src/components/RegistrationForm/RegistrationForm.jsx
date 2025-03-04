@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import s from './RegistrationForm.module.css';
 import { register } from '../../redux/auth/operations';
 import { Field, Form, Formik } from 'formik';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 const RegistrationForm = () => {
@@ -14,7 +14,6 @@ const RegistrationForm = () => {
   };
   const navigate = useNavigate();
   const handleSubmit = (values, options) => {
-    console.log(values);
     dispatch(register(values))
       .unwrap()
       .then(res => {
@@ -49,6 +48,9 @@ const RegistrationForm = () => {
           <button className={s.button} type="submit">
             Registration
           </button>
+          <p>
+            Already have account? <Link to="/login">Sign in!</Link>
+          </p>
         </Form>
       </Formik>
     </div>
